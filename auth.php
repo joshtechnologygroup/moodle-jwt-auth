@@ -207,7 +207,7 @@ class auth_plugin_jwt extends auth_plugin_base {
         return $cert->preferred_username;
     }
 
-    private function parse_jwt_component($authHeader, $secretKey="9TwZDjnIoFx0Vbf42rIdMumPRqa") {
+    private function parse_jwt_component($authHeader, $secretKey) {
         if (strlen($authHeader) < 7) {
           return null;
         }
